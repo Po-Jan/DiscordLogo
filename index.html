@@ -11,30 +11,19 @@
 <body>
   <div class="main">
     <div class="leftStolpec">
-      <button id="bezier" class="active">Bezier</button>
-      <button id="SVG">SVG</button>
+      <button id="SVG" class="active">SVG</button>
+      <button id="bezier">Bezier</button>
       <button id="PNG">PNG</button>
       <button id="download">Download</button>
     </div>
-
-    <div class="canvasIMG displayFlex" id="pageMain">
+    <!----------SVG slika------------------------------------------>
+    <div class="svgIMG displayFlex" id="pageMain">
       <div class="spanCont1">
-        <span class="naslov">Bezier Curve</span>
-      </div>
-
-        <canvas id="platno" height="202.59" width="268"></canvas>
-      <div class="animateDiv">
-        <button id="animateButton"onclick="bezier()">Animate</button>
-      </div>
-    </div>
-
-    <div class="svgIMG" id="page2">
-      <div class="spanCont2">
         <span class="naslov">SVG image</span>
       </div>
       <svg xmlns="http://www.w3.org/2000/svg" fill="#5865F2" class="discord" viewBox="0 0 570 480" id="custom-svg">
         <g transform="scale(1.6)">
-        <path d="M 94.09,119.00
+          <path d="M 94.09,119.00
         C 97.57,113.11 101.64,107.64 101.64,107.64
           101.64,107.64 113.23,102.55 124.36,99.09
           128.92,97.68 133.08,96.78 136.64,96.00
@@ -92,16 +81,34 @@
           229.41,191.57 229.50,182.50 229.50,182.50
           229.50,182.50 229.40,173.37 224.50,167.88
           219.75,162.56 210.19,160.88 210.25,160.88
-          210.31,160.88 200.79,162.78 196.25,168.00 Z"/>
+          210.31,160.88 200.79,162.78 196.25,168.00 Z" />
       </svg>
-      <div class="colorPicker">Color Picker: </div>
-      <div class="colorDiv">
-        <input type="color" id="color" value="#5865F2">
-      <label for="color" id="colorOutput">#5865F2</label>
-      <div class="reset">Reset</div>
+      <div class="svgEditDiv">
+        <div class="colorDiv">
+          <div class="colorPicker">Color Picker: </div>
+          <input type="color" id="color" value="#5865F2">
+          <label for="color" id="colorOutput">#5865F2</label>
+          <div class="reset">Reset</div>
+        </div>
+        <div class="rotateDiv">
+        
+        </div>
       </div>
-      
     </div>
+
+    <!------BezierCurve------------------------------------------>
+
+    <div class="canvasIMG" id="page2">
+      <div class="spanCont2">
+        <span class="naslov">Bezier Curve</span>
+      </div>
+
+      <canvas id="platno" height="202.59" width="268"></canvas>
+      <div class="animateDiv">
+        <button id="animateButton" onclick="bezier()">Animate</button>
+      </div>
+    </div>
+    <!-------------PNG slika--------------------------------->
 
     <div class="pngIMG" id="page3">
       <div class="spanCont3">
@@ -109,40 +116,40 @@
       </div>
       <img src="img/discordPNG.png" alt="Discord logo">
     </div>
-
+    <!-------------Download---+---------------------------------->
     <div class="download" id="page4">
       <div class="spanCont4">
         <span class="naslov">Download</span>
 
-      <div class="downloadSVG">
-        <button onclick="downloadSVG()">
-          <div class="leftSvgDiv">
-            Download SVG
-          </div>
-          <div class="rightSvgDiv">
-            <img src="img/downloadSignImg.png">
-          </div>
-        </button>
-      </div>
-      <div class="downloadPNG">
-        <button onclick="downloadPNG()">
-          <div class="leftSvgDiv">
-            Download PNG
-          </div>
-          <div class="rightSvgDiv">
-            <img src="img/downloadSignImg.png">
-          </div>
-        </button>
-      </div>
+        <div class="downloadSVG">
+          <button onclick="downloadSVG()">
+            <div class="leftSvgDiv">
+              Download SVG
+            </div>
+            <div class="rightSvgDiv">
+              <img src="img/downloadSignImg.png">
+            </div>
+          </button>
+        </div>
+        <div class="downloadPNG">
+          <button onclick="downloadPNG()">
+            <div class="leftSvgDiv">
+              Download PNG
+            </div>
+            <div class="rightSvgDiv">
+              <img src="img/downloadSignImg.png">
+            </div>
+          </button>
+        </div>
       </div>
     </div>
   </div>
 
-  <script src="javascript/buttons.js"></script>
+  <script src="javascript/leftColumn.js"></script>
   <script src="javascript/bezirCurve.js"></script>
   <script src="javascript/download.js"></script>
   <script src="javascript/colorPicker.js"></script>
- 
+
 </body>
 
 </html>
