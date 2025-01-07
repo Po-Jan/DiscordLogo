@@ -11,14 +11,14 @@
 <body>
   <div class="main">
     <div class="leftStolpec">
-      <button id="SVG" class="active">SVG</button>
-      <button id="bezier">Bezier</button>
-      <button id="PNG">PNG</button>
-      <button id="download">Download</button>
+      <button id="gumbSvg" class="active">SVG</button>
+      <button id="gumbCanvas">Bezier</button>
+      <button id="gumbPng">PNG</button>
+      <button id="gombDownload">Download</button>
     </div>
     <!----------SVG slika------------------------------------------>
-    <div class="svgIMG displayFlex" id="pageMain">
-      <div class="spanCont1">
+    <div class="svgIMG displayFlex" id="divSvg">
+      <div class="divNaslov1">
         <span class="naslov">SVG image</span>
       </div>
       <svg xmlns="http://www.w3.org/2000/svg" fill="#5865F2" class="discord" viewBox="0 0 570 480" id="custom-svg">
@@ -90,16 +90,14 @@
           <label for="color" id="colorOutput">#5865F2</label>
           <div class="reset">Reset</div>
         </div>
-        <div class="rotateDiv">
         
-        </div>
       </div>
     </div>
 
-    <!------BezierCurve------------------------------------------>
+    <!------BezierCurve--------------------------------------------->
 
-    <div class="canvasIMG" id="page2">
-      <div class="spanCont2">
+    <div class="canvasIMG" id="divCanvas">
+      <div class="divNaslov2">
         <span class="naslov">Bezier Curve</span>
       </div>
 
@@ -108,17 +106,17 @@
         <button id="animateButton" onclick="bezier()">Animate</button>
       </div>
     </div>
-    <!-------------PNG slika--------------------------------->
+    <!-------------PNG slika--------------------------------------->
 
-    <div class="pngIMG" id="page3">
-      <div class="spanCont3">
+    <div class="pngIMG" id="divPng">
+      <div class="divNaslov3">
         <span class="naslov">PNG image</span>
       </div>
       <img src="img/discordPNG.png" alt="Discord logo">
     </div>
-    <!-------------Download---+---------------------------------->
-    <div class="download" id="page4">
-      <div class="spanCont4">
+    <!-------------Download---------------------------------------->
+    <div class="download" id="divDownload">
+      <div class="divNaslov4">
         <span class="naslov">Download</span>
 
         <div class="downloadSVG">

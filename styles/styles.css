@@ -103,9 +103,7 @@ html {
   
 }
 
-.displayFlex {
-    display: flex !important;
-}
+
 
 img {
     height: 350px;
@@ -129,12 +127,12 @@ img {
     position: relative;
 }
 
-.spanCont2 {
+.divNaslov2 {
     top: 45px;
     position: absolute;
 }
 
-.spanCont2 span {
+.divNaslov2 span {
     font-size: 45px;
     letter-spacing: 1px;
     font-family: font9;
@@ -150,7 +148,6 @@ img {
 .svgEditDiv{
     display: flex;
     justify-content: space-between;
-    min-width: 530px;
 }
 
 .colorPicker {
@@ -220,12 +217,12 @@ img {
     position: relative;
 }
 
-.spanCont1 {
+.divNaslov1 {
     top: 45px;
     position: absolute;
 }
 
-.spanCont1 span {
+.divNaslov1 span {
     font-size: 45px;
     letter-spacing: 1px;
     font-family: font9;
@@ -279,12 +276,12 @@ canvas {
     position: relative;
 }
 
-.spanCont3 {
+.divNaslov3 {
     top: 45px;
     position: absolute;
 }
 
-.spanCont3 span {
+.divNaslov3 span {
     font-size: 45px;
     letter-spacing: 1px;
     font-family: font9;
@@ -302,12 +299,12 @@ canvas {
     position: relative;
 }
 
-.spanCont4 {
+.divNaslov4 {
     position: absolute;
     top: 45px;
 }
 
-.spanCont4 span {
+.divNaslov4 span {
     font-size: 45px;
     letter-spacing: 1px;
     font-family: font9;
@@ -393,4 +390,8 @@ canvas {
     transition: opacity 0.2s;
     font-size: 19px;
     transition: font-size 0.2s;
+}
+
+.displayFlex {
+    display: flex;
 }

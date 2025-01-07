@@ -1,43 +1,41 @@
 document.addEventListener('DOMContentLoaded', function () {
 
-    const SVG = document.getElementById('SVG');
-    const Bezier = document.getElementById('bezier');
-    const PNG = document.getElementById('PNG');
-    const Download = document.getElementById('download');
+    const SVG = document.getElementById('gumbSvg');
+    const Bezier = document.getElementById('gumbCanvas');
+    const PNG = document.getElementById('gumbPng');
+    const Download = document.getElementById('gombDownload');
 
-    const page1 = document.getElementById('pageMain');
-    const page2 = document.getElementById('page2');
-    const page3 = document.getElementById('page3');
-    const page4 = document.getElementById('page4');
+    const divSvg = document.getElementById('divSvg');
+    const divCanvas = document.getElementById('divCanvas');
+    const divPng = document.getElementById('divPng');
+    const divDownload = document.getElementById('divDownload');
 
-    SVG.addEventListener('click', function () {
-        page1.classList.add('displayFlex');
-        page2.classList.remove('displayFlex');
-        page3.classList.remove('displayFlex');
-        page4.classList.remove('displayFlex');
+    SVG.addEventListener('click', (event) => {
+        divSvg.classList.add('displayFlex');
+        divCanvas.classList.remove('displayFlex');
+        divPng.classList.remove('displayFlex');
+        divDownload.classList.remove('displayFlex');
     });
 
-    Bezier.addEventListener('click', function () {
-        page1.classList.remove('displayFlex');
-        page2.classList.add('displayFlex');
-        page3.classList.remove('displayFlex');
-        page4.classList.remove('displayFlex');
+    Bezier.addEventListener('click', (event) => {
+        divSvg.classList.remove('displayFlex');
+        divCanvas.classList.add('displayFlex');
+        divPng.classList.remove('displayFlex');
+        divDownload.classList.remove('displayFlex');
     });
 
-   
+    PNG.addEventListener('click', (event) => {
 
-    PNG.addEventListener('click', function () {
-
-        page1.classList.remove('displayFlex');
-        page2.classList.remove('displayFlex');
-        page3.classList.add('displayFlex');
-        page4.classList.remove('displayFlex');
+        divSvg.classList.remove('displayFlex');
+        divCanvas.classList.remove('displayFlex');
+        divPng.classList.add('displayFlex');
+        divDownload.classList.remove('displayFlex');
     });
 
-    Download.addEventListener('click', function () {
-        page1.classList.remove('displayFlex');
-        page2.classList.remove('displayFlex');
-        page3.classList.remove('displayFlex');
-        page4.classList.add('displayFlex');
+    Download.addEventListener('click', (event) => {
+        divSvg.classList.remove('displayFlex');
+        divCanvas.classList.remove('displayFlex');
+        divPng.classList.remove('displayFlex');
+        divDownload.classList.add('displayFlex');
     });
 });
