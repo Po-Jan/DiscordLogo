@@ -4,38 +4,8 @@
 }
 
 @font-face {
-    font-family: font2;
-    src: url("../fonts/pisava2.woff2") format("woff2");
-}
-
-@font-face {
     font-family: font3;
     src: url("../fonts/pisava3.woff2") format("woff2");
-}
-
-@font-face {
-    font-family: font4;
-    src: url("../fonts/pisava4.woff2") format("woff2");
-}
-
-@font-face {
-    font-family: font5;
-    src: url("../fonts/pisava5.woff2") format("woff2");
-}
-
-@font-face {
-    font-family: font6;
-    src: url("../fonts/pisava6.woff2") format("woff2");
-}
-
-@font-face {
-    font-family: font7;
-    src: url("../fonts/pisava7.woff2") format("woff2");
-}
-
-@font-face {
-    font-family: font8;
-    src: url("../fonts/pisava8.woff2") format("woff2");
 }
 
 @font-face {
@@ -43,10 +13,6 @@
     src: url("../fonts/pisava9.woff2") format("woff2");
 }
 
-@font-face {
-    font-family: font10;
-    src: url("../fonts/pisava10.woff2") format("woff2");
-}
 
 * {
     margin: 0;
