@@ -69,6 +69,7 @@ body {
     position: fixed;
     background-color: #23272a;
     width: 100%;
+    z-index: 1000;
 }
 .header {
     justify-content: space-between;

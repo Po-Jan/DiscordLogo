@@ -1,0 +1,397 @@
+@font-face {
+    font-family: font1;
+    src: url("../fonts/pisava1.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: font2;
+    src: url("../fonts/pisava2.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: font3;
+    src: url("../fonts/pisava3.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: font4;
+    src: url("../fonts/pisava4.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: font5;
+    src: url("../fonts/pisava5.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: font6;
+    src: url("../fonts/pisava6.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: font7;
+    src: url("../fonts/pisava7.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: font8;
+    src: url("../fonts/pisava8.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: font9;
+    src: url("../fonts/pisava9.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: font10;
+    src: url("../fonts/pisava10.woff2") format("woff2");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+
+}
+
+.main {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.leftStolpec {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(48, 50, 55);
+   
+}
+
+.leftStolpec button {
+    
+    height: 100%;
+    width: 140px;
+    cursor: pointer;
+    border: none;
+    background-color: rgb(48, 50, 55);
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    transition-duration: 0.2s;
+    text-align: center;
+    box-shadow: 0 4px 6px  rgba(0, 0, 0, 0.6), /* Main shadow */
+    0 1px 3px rgba(255, 255, 255, 0.1); /* Highlight */
+    opacity: 1;
+}
+
+.leftStolpec button:hover {
+    font-size: 20px;
+    transition: font-size 0.2s;
+    background-color: rgb(41, 43, 46);
+    transition: background-color 0.2s;
+    transform: scaleX(1.1);
+    border-radius: 10px 10px;
+  
+}
+
+
+
+img {
+    height: 350px;
+    width: 350px;
+}
+
+.naslov {
+    margin-top: 70px;
+}
+
+
+/*********************SVG slika***************************/
+
+.svgIMG {
+    height: 100%;
+    width: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.divNaslov2 {
+    top: 45px;
+    position: absolute;
+}
+
+.divNaslov2 span {
+    font-size: 45px;
+    letter-spacing: 1px;
+    font-family: font9;
+}
+
+.svgIMG svg {
+    max-width: 433px;
+    margin-top: 50px;
+    transform-origin: center; 
+    transition: transform 0.1s ease-out;
+}
+
+.svgEditDiv{
+    display: flex;
+    justify-content: space-between;
+}
+
+.colorPicker {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 15px;
+    font-family: font9;
+    font-size: 25px;
+    text-transform: none;
+}
+
+.colorDiv {
+    min-width: 150px;
+    font-family: font9;
+    font-size: 20px;
+    text-transform: uppercase;
+    height: 230px;
+}
+
+.colorDiv input {
+    width: 100px;
+    margin-right: 10px;
+}
+
+.rotateDiv{
+    width: 300px;
+    height: 230px;
+  
+}
+
+
+.reset {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    text-transform: capitalize;
+    border: none;
+    height: 50px;
+    background-color: rgb(56, 43, 251);
+    color: white;
+    cursor: pointer;
+    border-radius: 7px;
+    font-weight: 500;
+    font-family: font9;
+    opacity: 1;
+    transition: opacity 0.2s;
+    font-size: 20px;
+    transition: font-size 0.2s;
+    line-height: 50px;
+}
+
+.reset:hover {
+    opacity: 0.9;
+    transition: opacity 0.2s;
+    font-size: 23px;
+    transition: font-size 0.2s;
+}
+/*****************bezier curve*******************************/
+.canvasIMG {
+    height: 100%;
+    width: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.divNaslov1 {
+    top: 45px;
+    position: absolute;
+}
+
+.divNaslov1 span {
+    font-size: 45px;
+    letter-spacing: 1px;
+    font-family: font9;
+}
+
+.animateDiv {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.animateDiv button {
+    border: none;
+    height: 50px;
+    width: 250px;
+    background-color: rgb(56, 43, 251);
+    color: white;
+    cursor: pointer;
+    border-radius: 7px;
+    font-weight: 500;
+    font-family: font9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+    transition: font-size 0.2s;
+    opacity: 1;
+    transition: opacity 0.2s;
+}
+
+.animateDiv button:hover {
+    opacity: 0.9;
+    transition: opacity 0.2s;
+    font-size: 19px;
+    transition: font-size 0.2s;
+}
+
+canvas {
+    display: block;
+}
+
+/******************PNG slika******************************/
+
+.pngIMG {
+    height: 100%;
+    width: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.divNaslov3 {
+    top: 45px;
+    position: absolute;
+}
+
+.divNaslov3 span {
+    font-size: 45px;
+    letter-spacing: 1px;
+    font-family: font9;
+}
+
+/*****************download *******************************/
+
+.download {
+    height: 100%;
+    width: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.divNaslov4 {
+    position: absolute;
+    top: 45px;
+}
+
+.divNaslov4 span {
+    font-size: 45px;
+    letter-spacing: 1px;
+    font-family: font9;
+}
+
+.downloadSVG {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.downloadSVG button {
+    border: none;
+    height: 50px;
+    width: 250px;
+    background-color: rgb(56, 43, 251);
+    color: white;
+    cursor: pointer;
+    border-radius: 7px;
+    font-weight: 500;
+    font-family: font9;
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    transition: font-size 0.2s;
+    opacity: 1;
+    transition: opacity 0.2s;
+}
+
+.downloadSVG button:hover {
+    opacity: 0.9;
+    transition: opacity 0.2s;
+    font-size: 19px;
+    transition: font-size 0.2s;
+}
+
+.leftSvgDiv {
+    height: 50px;
+    width: 220px;
+    line-height: 50px;
+    border-radius: inherit;
+}
+
+.rightSvgDiv {
+    height: 50px;
+    background-color: rgb(14, 3, 192);
+    border-radius: inherit;
+}
+
+.rightSvgDiv img {
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
+    border-radius: inherit;
+}
+
+.downloadPNG {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.downloadPNG button {
+    border: none;
+    height: 50px;
+    width: 250px;
+    background-color: rgb(56, 43, 251);
+    color: white;
+    cursor: pointer;
+    border-radius: 7px;
+    font-weight: 500;
+    font-family: font9;
+    display: flex;
+    align-items: center;
+    opacity: 1;
+    transition: opacity 0.2s;
+    font-size: 17px;
+    transition: font-size 0.2s;
+}
+
+.downloadPNG button:hover {
+    opacity: 0.9;
+    transition: opacity 0.2s;
+    font-size: 19px;
+    transition: font-size 0.2s;
+}
+
+.displayFlex {
+    display: flex;
+}
