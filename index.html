@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="styles/stran.css" rel="stylesheet">
-    <link href="stran.css" rel="stylesheet">
     <title>Discord</title>
 </head>
 
@@ -13,10 +12,10 @@
     <div class="frontPage">
         <div class="header">
             <img src="img/discord.svg" alt="error pri nalaganju slike">
-            <a id="svg">SVG</a>
-            <a id="bezier">Bezier</a>
-            <a id="png">PNG</a>
-            <a id="download">Download</a>
+            <a id="svg" href="#svgPageid">Svg</a>
+            <a id="bezier" href="#bezierPageid">Bezier</a>
+            <a id="png" href="#pngPageid">Png</a>
+            <a id="download" href="#downloadPageid">Download</a>
             <a id="login"> Login</a>
         </div>
         <div class="subHeader">
@@ -35,16 +34,14 @@
             </div>
         </div>
     </div>
-    <div class="svgPage">
+<!---------------------------------------SVG Page------------------------------------------------------------------------->
+    <div class="svgPage" id="svgPageid">
         <div class="divNaslovSVG">
             <span class="naslov">SVG image</span>
         </div>
         <div class="centeringDiv">
             <div class="textDiv">
-                <p> Tuki sem neki nrdu z discord. Nevem sploh zakaj to pisem, ker bi raje sel na spagete. Yadadadada kar
-                    koli sploh nevem kej bi napisu tle sam neku morm napisat yaday daad nevem sploh kej bi joidadasjdakj
-                    dasdasjdads sploh nevem kej bi napisu tle sam neku morm napisat yaday daad nevem sploh kej bi
-                    joidadasjdakj dasdasjdads.</p>
+                <p> SVG images, or Scalable Vector Graphics, are ideal for web visuals due to their resolution independence. Unlike raster images, SVGs remain sharp at any size, making them perfect for logos, icons, and illustrations. They use XML to define shapes, allowing easy customization with CSS or JavaScript.</p>
                 <div class="svgEditDiv">
                     <div class="colorDiv">
                         <div class="colorPicker">Color Picker: </div>
@@ -55,7 +52,7 @@
                 </div>
             </div>
             <div class="svgDiv">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="#5865F2" class="discord" viewBox="0 0 570 480"
+                <svg fill="#5865F2" class="discord" viewBox="0 0 570 480"
                     id="custom-svg">
                     <g transform="scale(1.6)">
                         <path d="M 94.09,119.00
@@ -123,16 +120,14 @@
             </div>
         </div>
         <div class="spacingDiv"></div>
-        <div class="bezierPage">
+    <!---------------------------------------Bezier Page------------------------------------------------------------------------->
+        <div class="bezierPage" id="bezierPageid">
             <div class="divNaslovBezier">
                 <span class="naslov">Bezier image</span>
             </div>
             <div class="centeringDiv">
                 <div class="textDiv">
-                    <p>Tuki sem neki nrdu z discord. Nevem sploh zakaj to pisem, ker bi raje sel na spagete. Yadadadada
-                        kar koli sploh nevem kej bi napisu tle sam neku morm napisat yaday daad nevem sploh kej bi
-                        joidadasjdakj dasdasjdads sploh nevem kej bi napisu tle sam neku morm napisat yaday daad nevem
-                        sploh kej bi joidadasjdakj dasdasjdads.</p>
+                    <p>Bezier curves are mathematical curves widely used in graphics and design. Defined by control points, they create smooth, scalable paths ideal for vector illustrations. These curves enable precise control over shapes and transitions, making them essential for logos, typography, and animations. Quadratic and cubic Bezier curves are common, offering varying complexity.</p>
                         <div class="animateDiv">
                             <button id="animateButton" onclick="bezier()">Animate</button>
                         </div>
@@ -143,23 +138,50 @@
             </div>
         </div>
         <div class="spacingDiv"></div>
-        <div class="pngPage">
+        <!---------------------------------------Png Page------------------------------------------------------------------------->
+        <div class="pngPage" id="pngPageid">
             <div class="divNaslovPng">
                 <span class="naslov">Png image</span>
             </div>
             <div class="centeringDiv">
                 <div class="textDiv">
-                    <p>Tuki sem neki nrdu z discord. Nevem sploh zakaj to pisem, ker bi raje sel na spagete. Yadadadada
-                        kar koli sploh nevem kej bi napisu tle sam neku morm napisat yaday daad nevem sploh kej bi
-                        joidadasjdakj dasdasjdads sploh nevem kej bi napisu tle sam neku morm napisat yaday daad nevem
-                        sploh kej bi joidadasjdakj dasdasjdads.</p>
+                    <p>PNG images, or Portable Network Graphics, are a popular file format for high-quality graphics. They support lossless compression, preserving image details without sacrificing quality. PNGs excel in transparency handling, making them ideal for logos, icons, and overlays.</p>
                 </div>
                 <div class="pngDiv">
                    <img src="img/discordPNG.png" alt="error pri nalaganju slike">
                 </div>
             </div>
         </div>
-        
+        <div class="spacingDiv"></div>
+        <!---------------------------------------Download Page------------------------------------------------------------------------->
+        <div class="downloadPage" id="downloadPageid">
+            <div class="divNaslovDownload">
+                <span class="naslov">Download image</span>
+            </div>
+
+            <div class="downloadSVG">
+                <button onclick="downloadSVG()">
+                  <div class="leftSvgDiv">
+                    Download SVG
+                  </div>
+                  <div class="rightSvgDiv">
+                    <img src="img/downloadSignImg.png">
+                  </div>
+                </button>
+              </div>
+              <div class="downloadPNG">
+                <button onclick="downloadPNG()">
+                  <div class="leftSvgDiv">
+                    Download PNG
+                  </div>
+                  <div class="rightSvgDiv">
+                    <img src="img/downloadSignImg.png">
+                  </div>
+                </button>
+              </div>
+        </div>
+
+
         <div class="divFooter">
             <div class="container">
                 <div class="layout">
@@ -170,15 +192,61 @@
                                 <div class="languageText">English</div>
                                 <img class="arrowSlika" src="img/arrow.svg" alt="error pri nalaganju slike">
                                 </a>
-                                
                             </div>
                         <div class="socialMediaLogos">
                             <img src="img/x.svg" alt="error pri nalaganju slike">
+                            <img src="img/instagram.svg" alt="error pri nalaganju slike">
                             <img src="img/youtube.svg" alt="error pri nalaganju slike">
                             <img src="img/facebook.svg" alt="error pri nalaganju slike">
                             <img src="img/tiktok.svg" alt="error pri nalaganju slike">
                         </div>
                     </div>
+                    <div class="footerDiv">
+                        <div class="paragraph">Product</div>
+                        <a class="subParagraph">Download</a>
+                        <a class="subParagraph">Nitro</a>
+                        <a class="subParagraph">Status</a>
+                        <a class="subParagraph">App Directory</a>
+                        <a class="subParagraph">New Mobile Experience</a>
+                    </div>
+
+                    <div class="footerDiv">
+                        <div class="paragraph">Company</div>
+                        <a class="subParagraph">About</a>
+                        <a class="subParagraph">Jobs</a>
+                        <a class="subParagraph">Brand</a>
+                        <a class="subParagraph">Newsroom</a>
+                        
+                    </div>
+
+                    <div class="footerDiv">
+                        <div class="paragraph">Resources</div>
+                        <a class="subParagraph">College</a>
+                        <a class="subParagraph">Support</a>
+                        <a class="subParagraph">Safety</a>
+                        <a class="subParagraph">Blog</a>
+                        <a class="subParagraph">Feedback</a>
+                        <a class="subParagraph">StreamKit</a>
+                        <a class="subParagraph">Creators</a>
+                        <a class="subParagraph">Community</a>
+                        <a class="subParagraph">Developers</a>
+                        <a class="subParagraph">Gaming</a>
+                        <a class="subParagraph">Quests</a>
+                        <a class="subParagraph">Official Third-Party</a>
+                        <a class="subParagraph">Merch</a>
+                    </div>
+
+                    <div class="footerDiv">
+                        <div class="paragraph">Policies</div>
+                        <a class="subParagraph">Terms</a>
+                        <a class="subParagraph">Privacy</a>
+                        <a class="subParagraph">Cookie Settings</a>
+                        <a class="subParagraph">Guidelines</a>
+                        <a class="subParagraph">Acknowledgements</a>
+                        <a class="subParagraph">Licences</a>
+                        <a class="subParagraph">Company Information</a>
+                    </div>
+                    
                 </div>
                 <div class="footerLine">
                     <a class="footerLogo">

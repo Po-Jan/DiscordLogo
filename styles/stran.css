@@ -58,7 +58,7 @@ html,
 body {
     height: 100%;
     width: 100%;
-
+    scroll-behavior: smooth;
 }
 
 .frontPage {
@@ -90,7 +90,24 @@ body {
     font-weight: 600;
     transition: all .2s;
     cursor: pointer;
+    border-radius: 20px;
+    text-decoration: none;
+
 }
+
+.header #svg:hover{
+    background-color: #303336;
+}
+.header #bezier:hover{
+    background-color: #303336;
+}
+.header #png:hover{
+    background-color: #303336;
+}
+.header #download:hover{
+    background-color: #303336;
+}
+
 
 .header #login {
     color: #23272a;
@@ -100,7 +117,12 @@ body {
     font-size: 14px;
     font-weight: 700;
     line-height: 24px;
-    transition: all .2s;
+    transition: all .4s;
+}
+
+.header #login:hover{
+    color: #8891f2;
+    transition: all .4s;
 }
 
 .subHeader {
@@ -112,7 +134,6 @@ body {
 
 }
 
-.subHeaderRight {}
 
 .subHeaderLeft {
     flex-direction: column;
@@ -142,6 +163,7 @@ body {
     box-sizing: border-box;
     text-align: left;
     margin-bottom: 20px;
+    
 }
 
 .subHeaderLeft span {
@@ -156,11 +178,10 @@ body {
     display: flex;
     position: relative;
     width: auto;
+    cursor: pointer;
 }
 
 .downloadForWindowsDiv a {
-    grid-column-gap: 8px;
-    grid-row-gap: 8px;
     color: #fff;
     text-align: center;
     background-color: #5865f2;
@@ -187,8 +208,7 @@ body {
 /********************SVG PAGE**************************************************/
 .svgPage {
     background-color: white;
-
-    padding: 120px 0 120px 0;
+    padding: 100px 0 100px 0;
 }
 
 .divNaslovSVG {
@@ -213,6 +233,10 @@ body {
     justify-content: center;
     flex-direction: column;
     max-width: 500px;
+    background-color: #f6f6f6;
+    border-radius: 16px;
+    padding: 30px;
+    word-spacing: 2px;
 }
 .textDiv p{
     font-size: 20px;
@@ -222,11 +246,15 @@ body {
 .svgDiv{
     height: 500px;
     width: 500px;
+    background-color: #f6f6f6;
+    border-radius: 16px;
 }
 
 .svgEditDiv{
     display: flex;
     justify-content: center;
+    background-color: #f6f6f6;
+    border-radius: 16px;
 }
 
 .colorPicker {
@@ -285,8 +313,7 @@ body {
 /**************************Bezier Page***********************************************/
 .bezierPage{
     background-color: white;
-    height: 1000px;
-    padding: 120px 0 120px 0;
+    padding: 100px 0 100px 0;
     display: block;
 }
 .divNaslovBezier{
@@ -299,9 +326,14 @@ body {
     font-size: 45px;
     font-family: font9;
 }
-
-
-
+.bezierDiv{
+    background-color: #f6f6f6;
+    border-radius: 16px;
+    padding: 30px 30px 30px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .animateDiv {
     display: flex;
     justify-content: center;
@@ -311,7 +343,7 @@ body {
     border: none;
     height: 50px;
     width: 250px;
-    background-color: rgb(56, 43, 251);
+    background-color: #5865f2;
     color: white;
     cursor: pointer;
     border-radius: 7px;
@@ -325,14 +357,24 @@ body {
     opacity: 1;
     transition: opacity 0.2s;
 }
+.animateDiv button:hover{
+    opacity: 0.9;
+    transition: opacity 0.2s;
+    font-size: 19px;
+    transition: font-size 0.2s;
+}
 
 /***********************************PNG Page*******************************************/
 
 .pngPage{
     background-color: white;
-    height: 1000px;
-    padding: 120px 0 120px 0;
+    padding: 100px 0 100px 0;
     display: block;
+}
+
+.pngPage img{
+    background-color: #f6f6f6;
+    border-radius: 16px;
 }
 .divNaslovPng{
     width: 100%;
@@ -340,10 +382,123 @@ body {
     justify-content: center;
     margin-bottom: 200px;
 }
+
 .divNaslovPng span{
     font-size: 45px;
     font-family: font9;
 }
+/***************************************Download div**********************************************/
+.downloadPage{
+    background-color: white;
+    height: 800px;
+    padding-top: 120px;
+    display: block;
+}
+
+.divNaslovDownload{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 200px;
+}
+
+.divNaslovDownload span{
+    font-size: 45px;
+    font-family: font9;
+}
+
+.download {
+    height: 100%;
+    width: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.downloadSVG {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.downloadSVG button {
+    border: none;
+    height: 50px;
+    width: 250px;
+    background-color: rgb(56, 43, 251);
+    color: white;
+    cursor: pointer;
+    border-radius: 7px;
+    font-weight: 500;
+    font-family: font9;
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    transition: font-size 0.2s;
+    opacity: 1;
+    transition: opacity 0.2s;
+}
+
+.downloadSVG button:hover {
+    opacity: 0.9;
+    transition: opacity 0.2s;
+    font-size: 19px;
+    transition: font-size 0.2s;
+}
+
+.leftSvgDiv {
+    height: 50px;
+    width: 220px;
+    line-height: 50px;
+    border-radius: inherit;
+}
+
+.rightSvgDiv {
+    height: 50px;
+    background-color: rgb(14, 3, 192);
+    border-radius: inherit;
+}
+
+.rightSvgDiv img {
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
+    border-radius: inherit;
+}
+
+.downloadPNG {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.downloadPNG button {
+    border: none;
+    height: 50px;
+    width: 250px;
+    background-color: rgb(56, 43, 251);
+    color: white;
+    cursor: pointer;
+    border-radius: 7px;
+    font-weight: 500;
+    font-family: font9;
+    display: flex;
+    align-items: center;
+    opacity: 1;
+    transition: opacity 0.2s;
+    font-size: 17px;
+    transition: font-size 0.2s;
+}
+
+.downloadPNG button:hover {
+    opacity: 0.9;
+    transition: opacity 0.2s;
+    font-size: 19px;
+    transition: font-size 0.2s;
+}
+
 /***************************************Footer div**********************************************/
 .divFooter{
     background-color: #23272a;
@@ -351,6 +506,14 @@ body {
     padding-bottom: 64px;
     position: relative;
     overflow: visible;
+    width: 100%;
+}
+.divFooterSlike{
+    width: 380px;
+}
+.socialMediaLogos img:hover{
+    cursor: pointer;
+    
 }
 .container{
     z-index: 10;
@@ -358,7 +521,7 @@ body {
     max-width: 1180px;
     margin-left: auto;
     margin-right: auto;
-    font-family: Ggsans, sans-serif;
+    font-family: font9;
     position: relative;
 }
 .layout{
@@ -366,11 +529,12 @@ body {
     grid-column-gap: 20px;
     grid-row-gap: 20px;
     grid-template-rows: auto;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     align-items: start;
     width: 100%;
     font-family: font9;
 }
+
 .footerLine{
     border-top: 1px solid #5865f2;
     justify-content: space-between;
@@ -389,6 +553,9 @@ body {
     line-height: 24px;
     transition: all .2s;
 }
+.footerSignUp:hover{
+    cursor: pointer;
+}
 .language{
     z-index: 2;
     flex-direction: column;
@@ -400,13 +567,16 @@ body {
     margin-left: 0;
     font-family: Ggsans, sans-serif;
     display: block;
-   
 }
 .language a{
     display: flex;
     flex-direction: row;
     height: 18px;
     align-items: center;
+}
+
+.language a:hover{
+    cursor: pointer;
 }
 .languageText{
     color: white;
@@ -430,4 +600,28 @@ body {
 }
 .socialMediaLogos img{
     margin-right: 29px;
+}
+.paragraph{
+    font-weight: 500;
+    font-family: font9;
+    color:#5865f2;
+    height: 24px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    width: 167px;
+    display: flex;
+    flex-direction: row;
+}
+.subParagraph{
+    font-family: font9;
+    color:white;
+    display: block;
+    height: 24px;
+    margin-top: 8px;
+    font-size: 16px;
+    width: auto;
+}
+
+.subParagraph:hover{
+    cursor: pointer;
 }
