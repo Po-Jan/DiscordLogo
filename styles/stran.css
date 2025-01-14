@@ -187,7 +187,7 @@ body {
 /********************SVG PAGE**************************************************/
 .svgPage {
     background-color: white;
-    height: 1366px;
+
     padding: 120px 0 120px 0;
 }
 
@@ -195,6 +195,7 @@ body {
     display: flex;
     width: 100%;
     justify-content: center;
+    margin-bottom: 200px;
 }
 
 .divNaslovSVG span {
@@ -206,8 +207,227 @@ body {
     display: flex;
     justify-content: space-around;
 }
-.centeringDiv svg{
+
+.textDiv{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 500px;
+}
+.textDiv p{
+    font-size: 20px;
+    font-family: font9;
+}
+
+.svgDiv{
     height: 500px;
     width: 500px;
 }
 
+.svgEditDiv{
+    display: flex;
+    justify-content: center;
+}
+
+.colorPicker {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 15px;
+    font-family: font9;
+    font-size: 25px;
+    text-transform: none;
+}
+
+.colorDiv {
+    min-width: 150px;
+    font-family: font9;
+    font-size: 20px;
+    text-transform: uppercase;
+    height: 230px;
+}
+
+.colorDiv input {
+    width: 100px;
+    margin-right: 10px;
+}
+
+.reset {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    text-transform: capitalize;
+    border: none;
+    height: 50px;
+    background-color: rgb(145, 143, 143);
+    color: white;
+    cursor: pointer;
+    border-radius: 7px;
+    font-weight: 500;
+    font-family: font9;
+    opacity: 1;
+    transition: opacity 0.2s;
+    font-size: 20px;
+    transition: font-size 0.2s;
+    line-height: 50px;
+}
+
+.reset:hover {
+    opacity: 0.9;
+    transition: opacity 0.2s;
+    font-size: 23px;
+    transition: font-size 0.2s;
+}
+.spacingDiv{
+    width: 100%;
+    height: 350px;
+}
+/**************************Bezier Page***********************************************/
+.bezierPage{
+    background-color: white;
+    height: 1000px;
+    padding: 120px 0 120px 0;
+    display: block;
+}
+.divNaslovBezier{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 200px;
+}
+.divNaslovBezier span{
+    font-size: 45px;
+    font-family: font9;
+}
+
+
+
+.animateDiv {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.animateDiv button {
+    border: none;
+    height: 50px;
+    width: 250px;
+    background-color: rgb(56, 43, 251);
+    color: white;
+    cursor: pointer;
+    border-radius: 7px;
+    font-weight: 500;
+    font-family: font9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+    transition: font-size 0.2s;
+    opacity: 1;
+    transition: opacity 0.2s;
+}
+
+/***********************************PNG Page*******************************************/
+
+.pngPage{
+    background-color: white;
+    height: 1000px;
+    padding: 120px 0 120px 0;
+    display: block;
+}
+.divNaslovPng{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 200px;
+}
+.divNaslovPng span{
+    font-size: 45px;
+    font-family: font9;
+}
+/***************************************Footer div**********************************************/
+.divFooter{
+    background-color: #23272a;
+    padding-top: 80px;
+    padding-bottom: 64px;
+    position: relative;
+    overflow: visible;
+}
+.container{
+    z-index: 10;
+    width: 90%;
+    max-width: 1180px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Ggsans, sans-serif;
+    position: relative;
+}
+.layout{
+    display: grid;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    align-items: start;
+    width: 100%;
+    font-family: font9;
+}
+.footerLine{
+    border-top: 1px solid #5865f2;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 32px;
+    padding-top: 32px;
+    display: flex;
+}
+.footerSignUp{
+    color: #fff;
+    background-color: #5865f2;
+    border-radius: 40px;
+    padding: 7px 16px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    transition: all .2s;
+}
+.language{
+    z-index: 2;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 190px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    margin-left: 0;
+    font-family: Ggsans, sans-serif;
+    display: block;
+   
+}
+.language a{
+    display: flex;
+    flex-direction: row;
+    height: 18px;
+    align-items: center;
+}
+.languageText{
+    color: white;
+    font-size: 14px;
+    font-family: font9;
+}
+.UsaSlika{
+    height: 18px;
+    margin-right: 8px;
+}
+.arrowSlika{
+    padding-left: 6px;
+    height: 6px;
+
+}
+.socialMediaLogos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 24px;
+}
+.socialMediaLogos img{
+    margin-right: 29px;
+}

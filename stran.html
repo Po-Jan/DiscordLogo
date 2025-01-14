@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="styles/stran.css"rel="stylesheet">
+    <link href="styles/stran.css" rel="stylesheet">
     <title>Discord</title>
 </head>
+
 <body>
     <div class="frontPage">
         <div class="header">
-            <img src="img/discord.svg">
+            <img src="img/discord.svg" alt="error pri nalaganju slike">
             <a id="svg">SVG</a>
             <a id="bezier">Bezier</a>
             <a id="png">PNG</a>
@@ -19,7 +21,8 @@
         <div class="subHeader">
             <div class="subHeaderLeft">
                 <h1>get discord for any device</h1>
-                <p>An adventure awaits. Hang out with your friends on our desktop app and keep the conversation going on mobile.
+                <p>An adventure awaits. Hang out with your friends on our desktop app and keep the conversation going on
+                    mobile.
                 </p>
                 <div class="downloadForWindowsDiv">
                     <a>Download for Windows</a>
@@ -27,7 +30,7 @@
                 </div>
             </div>
             <div class="subHeaderRight">
-                <img src="img/subHeaderSlika.svg">
+                <img src="img/subHeaderSlika.svg" alt="error pri nalaganju slike">
             </div>
         </div>
     </div>
@@ -37,12 +40,24 @@
         </div>
         <div class="centeringDiv">
             <div class="textDiv">
-                <p> Tuki sem neki nrdu z discord. Nevem sploh zakaj to pisem , ker bi raje sel na spagete.</p>
+                <p> Tuki sem neki nrdu z discord. Nevem sploh zakaj to pisem, ker bi raje sel na spagete. Yadadadada kar
+                    koli sploh nevem kej bi napisu tle sam neku morm napisat yaday daad nevem sploh kej bi joidadasjdakj
+                    dasdasjdads sploh nevem kej bi napisu tle sam neku morm napisat yaday daad nevem sploh kej bi
+                    joidadasjdakj dasdasjdads.</p>
+                <div class="svgEditDiv">
+                    <div class="colorDiv">
+                        <div class="colorPicker">Color Picker: </div>
+                        <input type="color" id="color" value="#5865F2">
+                        <label for="color" id="colorOutput">#5865F2</label>
+                        <div class="reset">Reset</div>
+                    </div>
+                </div>
             </div>
             <div class="svgDiv">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="#5865F2" class="discord" viewBox="0 0 570 480" id="custom-svg">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="#5865F2" class="discord" viewBox="0 0 570 480"
+                    id="custom-svg">
                     <g transform="scale(1.6)">
-                      <path d="M 94.09,119.00
+                        <path d="M 94.09,119.00
                     C 97.57,113.11 101.64,107.64 101.64,107.64
                       101.64,107.64 113.23,102.55 124.36,99.09
                       128.92,97.68 133.08,96.78 136.64,96.00
@@ -101,13 +116,83 @@
                       229.50,182.50 229.40,173.37 224.50,167.88
                       219.75,162.56 210.19,160.88 210.25,160.88
                       210.31,160.88 200.79,162.78 196.25,168.00 Z" />
-                  </svg>
+                </svg>
+
+            </div>
             </div>
         </div>
-
-
-    </div>
+        <div class="spacingDiv"></div>
+        <div class="bezierPage">
+            <div class="divNaslovBezier">
+                <span class="naslov">Bezier image</span>
+            </div>
+            <div class="centeringDiv">
+                <div class="textDiv">
+                    <p>Tuki sem neki nrdu z discord. Nevem sploh zakaj to pisem, ker bi raje sel na spagete. Yadadadada
+                        kar koli sploh nevem kej bi napisu tle sam neku morm napisat yaday daad nevem sploh kej bi
+                        joidadasjdakj dasdasjdads sploh nevem kej bi napisu tle sam neku morm napisat yaday daad nevem
+                        sploh kej bi joidadasjdakj dasdasjdads.</p>
+                        <div class="animateDiv">
+                            <button id="animateButton" onclick="bezier()">Animate</button>
+                        </div>
+                </div>
+                <div class="bezierDiv">
+                    <canvas id="platno" height="202.59" width="268"></canvas>
+                </div>
+            </div>
+        </div>
+        <div class="spacingDiv"></div>
+        <div class="pngPage">
+            <div class="divNaslovPng">
+                <span class="naslov">Png image</span>
+            </div>
+            <div class="centeringDiv">
+                <div class="textDiv">
+                    <p>Tuki sem neki nrdu z discord. Nevem sploh zakaj to pisem, ker bi raje sel na spagete. Yadadadada
+                        kar koli sploh nevem kej bi napisu tle sam neku morm napisat yaday daad nevem sploh kej bi
+                        joidadasjdakj dasdasjdads sploh nevem kej bi napisu tle sam neku morm napisat yaday daad nevem
+                        sploh kej bi joidadasjdakj dasdasjdads.</p>
+                </div>
+                <div class="pngDiv">
+                   <img src="img/discordPNG.png" alt="error pri nalaganju slike">
+                </div>
+            </div>
+        </div>
+        
+        <div class="divFooter">
+            <div class="container">
+                <div class="layout">
+                    <div class="divFooterSlike">
+                            <div class="language">
+                                <a>
+                                <img class="UsaSlika" src="img/USA.png" alt="error pri nalaganju slike">
+                                <div class="languageText">English</div>
+                                <img class="arrowSlika" src="img/arrow.svg" alt="error pri nalaganju slike">
+                                </a>
+                                
+                            </div>
+                        <div class="socialMediaLogos">
+                            <img src="img/x.svg" alt="error pri nalaganju slike">
+                            <img src="img/youtube.svg" alt="error pri nalaganju slike">
+                            <img src="img/facebook.svg" alt="error pri nalaganju slike">
+                            <img src="img/tiktok.svg" alt="error pri nalaganju slike">
+                        </div>
+                    </div>
+                </div>
+                <div class="footerLine">
+                    <a class="footerLogo">
+                        <img src="img/discord.svg" alt="error pri nalaganju slike">
+                    </a>
+                    <a class="footerSignUp">Sign up</a>
+                </div>
+            </div>
+        </div>
     
-</div>
+    </div>
+    <script src="javascript/leftColumn.js"></script>
+    <script src="javascript/bezirCurve.js"></script>
+    <script src="javascript/download.js"></script>
+    <script src="javascript/colorPicker.js"></script>
 </body>
-</html> 
+
+</html>
