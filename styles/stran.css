@@ -65,7 +65,11 @@ body {
     background-color: #23272a;
     height: auto;
 }
-
+.okoliHeader{
+    position: fixed;
+    background-color: #23272a;
+    width: 100%;
+}
 .header {
     justify-content: space-between;
     align-items: center;
@@ -215,7 +219,7 @@ body {
     display: flex;
     width: 100%;
     justify-content: center;
-    margin-bottom: 200px;
+    margin-bottom: 170px;
 }
 
 .divNaslovSVG span {
