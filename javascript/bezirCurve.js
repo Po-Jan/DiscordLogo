@@ -5,7 +5,7 @@ function bezier() {
 
   delayButton();
 
- const pathSegments = [
+  const pathSegments = [
     { moveTo: [216.856339, 16.5966031] },
     { bezierTo: [200.285002, 8.84328665, 182.566144, 3.2084988, 164.041564, 0] },
     { bezierTo: [161.766523, 4.11318106, 159.108624, 9.64549908, 157.276099, 14.0464379] },
@@ -38,7 +38,7 @@ function bezier() {
     { bezierTo: [183.391518, 82.7145587, 193.761324, 94.5189427, 193.539891, 108.914901] },
     { bezierTo: [193.539891, 123.290155, 183.391518, 135.09489, 170.525237, 135.09489] },
     { closePath: true }
-];
+  ];
 
   
 let step = 0; 
@@ -52,7 +52,7 @@ function renderSegment() {
   if (part.bezierTo) {
     ctx.bezierCurveTo(...part.bezierTo);
   }
-  ctx.strokeStyle = "#5865F2";
+  ctx.strokeStyle = "rgb(88,101,242)";
   ctx.lineWidth = 2; 
   ctx.stroke();
 
@@ -60,12 +60,12 @@ function renderSegment() {
   if (step < pathSegments.length) {
     setTimeout(renderSegment, 50);
   } else {
-    ctx.fillStyle = "#5865F2"; 
-    ctx.fill();
+    ctx.fillStyle = "rgb(88,101,242)"; 
+    bezierFill();
   }
 }
-renderSegment();
 
+renderSegment();
 function delayButton() {
   const button = document.querySelector("#animateButton");
 
@@ -77,4 +77,5 @@ function delayButton() {
     button.disabled = false;
   }, 1700); 
 }
+
 }

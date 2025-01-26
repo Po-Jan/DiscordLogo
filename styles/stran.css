@@ -13,6 +13,49 @@
     src: url("../fonts/pisava9.woff2") format("woff2");
 }
 
+.swal-button {
+    background-color: hsl(235 calc(1 * 85.6%) 64.7% / 1) !important;
+    outline-style:none;
+    border:none;
+    opacity: 0.9;
+   
+}
+.swal-button:hover {
+    opacity: 1;
+   
+}
+
+.swal-text {
+    color: oklab(0.786807 -0.0025776 -0.0110238);
+    font-size: 18px;
+    font-family: font1;
+}
+
+.swal-title{
+    font-size: 30px;
+    line-height: 1.25;
+    margin-bottom: 8px;
+    color: oklab(0.963963 -0.000228554 -0.00283051);
+    font-family: font9;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.swal-modal{
+    background-color: oklab(0.321088 -0.000220731 -0.00934622);
+}
+
+.swal-icon--success::before,.swal-icon--success::after,.swal-icon--success__hide-corners{
+    opacity: 0 !important;
+}
+
+.swal-icon--success{
+   border-color: #2B7A0B !important;
+
+}
+body.no-scroll {
+    overflow: hidden;
+  }
 
 * {
     margin: 0;
@@ -63,7 +106,6 @@ body {
     cursor: pointer;
     border-radius: 20px;
     text-decoration: none;
-
 }
 
 .header #svg:hover{
@@ -89,13 +131,38 @@ body {
     font-weight: 700;
     line-height: 24px;
     transition: all .4s;
+    position: relative;
 }
 
 .header #login:hover{
     color: #8891f2;
     transition: all .4s;
 }
-
+.or{
+    position: absolute;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    transition: all .4s;
+    margin-left:88%;
+}
+.header #SignUp{
+    color: #fff;
+    background-color: #5865f2;
+    border-radius: 40px;
+    padding: 7px 16px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    transition: all .4s;
+}
+.header #SignUp:hover{
+    color: black;
+    transition: all .4s;
+ 
+    
+}
 .subHeader {
     padding: 230px 0 230px 0;
     max-width: 1180px;
@@ -168,7 +235,16 @@ body {
     display: flex;
     font-family: font9;
     margin-right: 25px;
+   
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+    box-shadow: none;
 }
+.downloadForWindowsDiv a:hover {
+    transform: translate(2px, -3px); /* Move slightly up and to the right */
+    box-shadow: -2px 3px 10px rgba(255, 255, 255, 0.4); /* Shadow offsets to the bottom-left */
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth transition */
+}
+
 
 .downloadForWindowsDiv span {
     font-size: 18px;
@@ -176,12 +252,26 @@ body {
     color: white;
 }
 
-/********************SVG PAGE**************************************************/
-.svgPage {
-    background-color: white;
-    padding: 100px 0 100px 0;
+.svgBezierPage{
+    background: linear-gradient(to top, #5865F2, #23272a);
+}
+.subHeaderRight{
+    position: relative;
+}
+.innerFace{
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    margin: 137px 0px 0px 207px;
+    background-color: black;
+    border-radius: 10px;
+    z-index: 2;
 }
 
+/********************SVG PAGE**************************************************/
+.svgPage {
+    padding: 100px 0 100px 0;
+}
 .divNaslovSVG {
     display: flex;
     width: 100%;
@@ -192,6 +282,7 @@ body {
 .divNaslovSVG span {
     font-size: 45px;
     font-family: font9;
+    color: white;
 }
 
 .centeringDiv {
@@ -204,10 +295,12 @@ body {
     justify-content: center;
     flex-direction: column;
     max-width: 500px;
-    background-color: #f6f6f6;
+    background-color: #d3d2d2;
     border-radius: 16px;
     padding: 30px;
     word-spacing: 2px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    height: 368px;
 }
 .textDiv p{
     font-size: 20px;
@@ -215,23 +308,28 @@ body {
 }
 
 .svgDiv{
-    height: 500px;
-    width: 500px;
-    background-color: #f6f6f6;
+    height: 368px;
+    width: 368px;
+    background-color: #d3d2d2;
     border-radius: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 
 .svgEditDiv{
     display: flex;
     justify-content: center;
-    background-color: #f6f6f6;
+    background-color: #d3d2d2;
     border-radius: 16px;
 }
 
 .colorPicker {
     display: flex;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 10px;
     margin-bottom: 15px;
     font-family: font9;
     font-size: 25px;
@@ -243,7 +341,7 @@ body {
     font-family: font9;
     font-size: 20px;
     text-transform: uppercase;
-    height: 230px;
+    height: 180px;
 }
 
 .colorDiv input {
@@ -254,7 +352,7 @@ body {
 .reset {
     display: flex;
     justify-content: center;
-    margin-top: 40px;
+    margin-top: 20px;
     text-transform: capitalize;
     border: none;
     height: 50px;
@@ -281,9 +379,10 @@ body {
     width: 100%;
     height: 350px;
 }
+
 /**************************Bezier Page***********************************************/
 .bezierPage{
-    background-color: white;
+
     padding: 100px 0 100px 0;
     display: block;
 }
@@ -296,14 +395,17 @@ body {
 .divNaslovBezier span{
     font-size: 45px;
     font-family: font9;
+    color: white;
 }
 .bezierDiv{
-    background-color: #f6f6f6;
+    background-color: #d3d2d2;
     border-radius: 16px;
-    padding: 30px 30px 30px 30px;
+    padding: 30px 26px 30px 34px;
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a soft shadow */
+    width: 368px;
 }
 .animateDiv {
     display: flex;
@@ -334,33 +436,44 @@ body {
     font-size: 19px;
     transition: font-size 0.2s;
 }
-
+.pngDownloadPage{
+    background: linear-gradient(to bottom, #5865F2, white);
+}
 /***********************************PNG Page*******************************************/
 
 .pngPage{
-    background-color: white;
     padding: 100px 0 100px 0;
     display: block;
 }
-
-.pngPage img{
+.pngDiv{
+    height: 368px;
+    width: 368px;
     background-color: #f6f6f6;
     border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a soft shadow */
 }
+.pngPage img{
+    background-color: #f6f6f6;
+}
+
 .divNaslovPng{
     width: 100%;
     display: flex;
     justify-content: center;
     margin-bottom: 200px;
 }
-
+.pngPage .textDiv{
+    background-color: #f6f6f6;
+}
 .divNaslovPng span{
     font-size: 45px;
     font-family: font9;
 }
 /***************************************Download div**********************************************/
 .downloadPage{
-    background-color: white;
     height: 800px;
     padding-top: 120px;
     display: block;
@@ -514,19 +627,7 @@ body {
     padding-top: 32px;
     display: flex;
 }
-.footerSignUp{
-    color: #fff;
-    background-color: #5865f2;
-    border-radius: 40px;
-    padding: 7px 16px;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 24px;
-    transition: all .2s;
-}
-.footerSignUp:hover{
-    cursor: pointer;
-}
+
 .language{
     z-index: 2;
     flex-direction: column;
