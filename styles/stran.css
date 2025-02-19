@@ -164,7 +164,7 @@ body {
     
 }
 .subHeader {
-    padding: 230px 0 230px 0;
+    padding: 230px 0 130px 0;
     max-width: 1180px;
     margin: auto;
     justify-content: space-between;
@@ -270,19 +270,19 @@ body {
 
 /********************SVG PAGE**************************************************/
 .svgPage {
-    padding: 100px 0 100px 0;
+    padding: 20px 0 20px 0;
 }
 .divNaslovSVG {
     display: flex;
     width: 100%;
-    justify-content: center;
-    margin-bottom: 170px;
+    justify-content: left;
 }
 
 .divNaslovSVG span {
     font-size: 45px;
     font-family: font9;
     color: white;
+    margin:100px 0 30px 260px;
 }
 
 .centeringDiv {
@@ -382,21 +382,21 @@ body {
 
 /**************************Bezier Page***********************************************/
 .bezierPage{
-
-    padding: 100px 0 100px 0;
-    display: block;
+    padding: 20px 0 20px 0;
 }
 .divNaslovBezier{
-    width: 100%;
     display: flex;
-    justify-content: center;
-    margin-bottom: 200px;
+    width: 100%;
+    justify-content: left;
+
 }
 .divNaslovBezier span{
     font-size: 45px;
     font-family: font9;
     color: white;
+    margin:100px 0 30px 260px;
 }
+
 .bezierDiv{
     background-color: #d3d2d2;
     border-radius: 16px;
@@ -442,8 +442,7 @@ body {
 /***********************************PNG Page*******************************************/
 
 .pngPage{
-    padding: 100px 0 100px 0;
-    display: block;
+    padding: 20px 0 20px 0;
 }
 .pngDiv{
     height: 368px;
@@ -460,22 +459,23 @@ body {
 }
 
 .divNaslovPng{
-    width: 100%;
     display: flex;
-    justify-content: center;
-    margin-bottom: 200px;
-}
-.pngPage .textDiv{
-    background-color: #f6f6f6;
+    width: 100%;
+    justify-content: left;
+
 }
 .divNaslovPng span{
     font-size: 45px;
     font-family: font9;
+    color: white;
+    margin:100px 0 30px 260px;
+}
+.pngPage .textDiv{
+    background-color: #f6f6f6;
 }
 /***************************************Download div**********************************************/
 .downloadPage{
-    height: 800px;
-    padding-top: 120px;
+    height: 600px;
     display: block;
 }
 
@@ -483,12 +483,14 @@ body {
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-bottom: 200px;
+    margin-bottom: 150px;
 }
 
 .divNaslovDownload span{
     font-size: 45px;
     font-family: font9;
+    color: rgb(255, 255, 255);
+    margin:100px 0 30px ;
 }
 
 .download {
